@@ -1,0 +1,109 @@
+//Ranaweera A.A.V.U.A_IT21260056
+//course header1
+
+#include"RegisteredLecturer.h"
+
+class Course
+{
+private:
+    char CID[10];
+    char C_Name[200];
+    char C_Type[100];
+
+public:
+    Course();
+    Course(const char C_ID[], const char cName[], const char cType[]);
+    void addcourse(RegisteredLecturer* lecturer);
+    void DisplayCourseDetails();
+    ~Course();
+
+
+};
+
+//Resourse header2
+
+class Resource
+{
+private:
+    char RID[10];
+    char R_Name[200];
+    char R_Type[30];
+
+public:
+    Resource();
+    Resource(const char R_ID[], const char rName[], const char rType[]);
+    void DisplayResourceDetails();
+    ~Resource();
+};
+
+//course cpp1
+
+   #include"Course.h"
+   #include<cstring>
+
+    Course::Course() 
+    {
+      
+    }
+
+    Course::Course(const char C_ID[], const char cName[], const char cType[])
+    {
+        strcpy(CID ,C_ID);
+        strcpy(C_Name , cName);
+        strcpy(C_Type , cType);
+
+    }
+
+    void Course::addcourse(RegisteredLecturer* lecturer)
+    {
+
+    }
+
+    void Course::DisplayCourseDetails()
+    {
+
+
+    }
+
+    Course::~Course()
+   {
+     
+   }
+
+//Resourse cpp2
+
+
+    #include"Resource.h"
+    #include<cstring>
+
+    Resource::Resource() 
+    {
+      
+    }
+
+    Resource::Resource(const char R_ID[], const char rName[], const char rType[])
+    {
+        strcpy(RID , R_ID);
+        strcpy(R_Name , rName);
+        strcpy(R_Type , rType);
+
+
+    }
+
+    void Resource::DisplayResourceDetails()
+    {
+
+
+    }
+
+    Resource::~Resource() 
+    {
+      
+    }
+
+
+
+
+
+
+
